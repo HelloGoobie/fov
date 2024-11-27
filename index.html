@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIVEM FOV Updater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FIVEM FOV Updater</h1>
+    <p>Update your <code>fivem.cfg</code> file automatically based on vehicle data.</p>
+  </header>
+
+  <main>
+    <form id="app-form">
+      <label for="api-key">API Key:</label>
+      <input type="text" id="api-key" placeholder="Enter your API key" required>
+
+      <label for="cfg-file">Upload fivem.cfg:</label>
+      <input type="file" id="cfg-file" accept=".cfg" required>
+
+      <button type="submit">Update FOV</button>
+    </form>
+
+    <textarea id="log" readonly placeholder="Log will appear here..."></textarea>
+
+    <button id="download-btn" style="display: none;">Download Updated fivem.cfg</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
